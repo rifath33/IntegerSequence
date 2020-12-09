@@ -9,5 +9,7 @@ public class Tester{
       System.out.print(as.next()+", ");
     }
 
+// 1, 3, 5, 0, -1, 3, 9, 
+
   }
 }
