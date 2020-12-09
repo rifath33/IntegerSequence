@@ -21,15 +21,16 @@ public class ArraySequence implements IntegerSequence{
 
 
   public void reset(){
+    currentIndex = 0;
   }
 
 
   public int length(){
-    return 1;
+    return data.length;
   }
 
   public boolean hasNext(){
-    return false;
+    return(currentIndex <= data.length);
   }
 
   //@throws NoSuchElementException
