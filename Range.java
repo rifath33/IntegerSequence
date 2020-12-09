@@ -32,5 +32,9 @@ public class Range implements IntegerSequence{
     current = startingIndex;
   }
 
+  public void reset(){
+    current = start;
+  }
+
 
 }
