@@ -10,5 +10,7 @@ public class Tester{
     }
     System.out.println();
 
+    System.out.print(r.next());
+
   }
 }
