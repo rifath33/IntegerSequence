@@ -30,7 +30,7 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public boolean hasNext(){
-    return(currentIndex <= data.length);
+    return(currentIndex < data.length);
   }
 
   //@throws NoSuchElementException
