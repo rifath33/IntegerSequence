@@ -35,7 +35,13 @@ public class ArraySequence implements IntegerSequence{
 
   //@throws NoSuchElementException
   public int next() throws NoSuchElementException{
-    return 1;
+    if(!hasNext())
+    throw new NoSuchElementException();
+    else{
+      int memory = data[current];
+      current++;
+      return memory;
+    }
   }
 
 }
