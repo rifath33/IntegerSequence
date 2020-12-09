@@ -48,12 +48,13 @@ public class ArraySequence implements IntegerSequence{
   //This constructor will copy ALL values of the `otherseq` into the data array.
   public ArraySequence(IntegerSequence otherseq){
     data = new int[otherseq.length()];
-
-      for(int i = 0; i < otherseq.length(); i++){
+    otherseq.reset();
+    
+      for(int i = 0; i < data.length; i++){
         data[i] = otherseq.next();
       }
 
-    otherseq.reset();
+
   }
 
 }
