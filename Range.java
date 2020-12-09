@@ -26,6 +26,11 @@ import java.util.NoSuchElementException;
 public class Range implements IntegerSequence{
   private int start,end,current;
 
+  public Range(int startingIndex,  int endingIndex){
+    start = startingIndex;
+    end = endingIndex;
+    current = startingIndex;
+  }
 
 
 }
