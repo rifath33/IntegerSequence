@@ -45,5 +45,15 @@ public class Range implements IntegerSequence{
     return(current <= end);
   }
 
+  //@throws NoSuchElementException
+  public int next() throws NoSuchElementException{
+    if(!hasNext())
+    throw new NoSuchElementException();
+    else{
+      int memory = current;
+      current++;
+      return memory;
+    }
+  }
 
 }
