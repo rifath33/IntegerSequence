@@ -38,8 +38,8 @@ public class ArraySequence implements IntegerSequence{
     if(!hasNext())
     throw new NoSuchElementException();
     else{
-      int memory = data[current];
-      current++;
+      int memory = data[currentIndex];
+      currentIndex++;
       return memory;
     }
   }
