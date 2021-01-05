@@ -53,11 +53,15 @@ public class ArraySequence implements IntegerSequence{
     data = new int[otherseq.length()];
     otherseq.reset();
     
-      for(int i = 0; i < data.length; i++){
-        data[i] = otherseq.next();
-      }
-
-
+    int index=0;
+    while(otherseq.hasNext()){
+        data[index]=otherseq.next();
+        index++;
+    }
+    
+    reset();
+    otherseq.reset();
+    
   }
 
 }
