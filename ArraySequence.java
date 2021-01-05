@@ -15,7 +15,10 @@ public class ArraySequence implements IntegerSequence{
 
   /*Construct the sequence by copying values from the other array into the data array*/
   public ArraySequence(int [] other){
-    data = other;
+    data = new int[other.length];
+		for (int i = 0; i < other.length; i++) {
+			data[i] = other[i];
+		}
     currentIndex = 0;
   }
 
