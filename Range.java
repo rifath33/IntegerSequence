@@ -29,6 +29,10 @@ public class Range implements IntegerSequence{
   public Range(int startingIndex,  int endingIndex){
     start = startingIndex;
     end = endingIndex;
+    
+    if(endingIndex<startingIndex)
+    throw new IllegalArgumentException("We can't have the end before the start...");
+    
     current = startingIndex;
   }
 
